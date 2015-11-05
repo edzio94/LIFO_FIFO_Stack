@@ -9,9 +9,9 @@ public class AbstractStack implements StackInterface {
     protected List<Stack> stack;
     protected String classID;
 
-    public AbstractStack(Object object) {
+    public AbstractStack(String classID) {
         this.stack = new ArrayList<>();
-        this.classID = object.getClass().getName();
+        this.classID = classID;
     }
 
     @Override

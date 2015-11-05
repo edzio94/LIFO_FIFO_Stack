@@ -4,8 +4,8 @@
 public class StackFILOManager extends AbstractStack{
 
 
-    public StackFILOManager(Object object){
-        super(object);
+    public StackFILOManager(String classID){
+        super(classID);
     }
 
 

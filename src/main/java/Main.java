@@ -5,7 +5,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        new Runner(StackFactory.create(StackType.FIFO,int.class.getClass()));
+        new Runner(StackFactory.create(StackType.FIFO,Integer.class.getName()));
         System.out.println("Int class: "+int.class.getClass());
         System.out.println("Int name: "+int.class.getName());
     }

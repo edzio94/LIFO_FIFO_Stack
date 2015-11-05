@@ -4,8 +4,9 @@
 public class Runner {
     private StackInterface stackManager;
 
-    public Runner(StackInterface stack)
+    public Runner(StackInterface stackInterface)
     {
-        this.stackManager = stack;
+        this.stackManager = stackInterface;
+        //stackManager.addToStack();
     }
 }

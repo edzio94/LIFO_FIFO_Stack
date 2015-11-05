@@ -6,11 +6,11 @@ import java.util.List;
  */
 public class StackFIFOManager extends AbstractStack {
 
-    public StackFIFOManager(Object object) {
-    super(object);
+    public StackFIFOManager(String classID) {
+    super(classID);
 
     }
-    //Have some problems with GIT and commit.
+
     public void addToStack(Priority p, Object object) {
 
         if(object.getClass().equals(this.classID.getClass()))
