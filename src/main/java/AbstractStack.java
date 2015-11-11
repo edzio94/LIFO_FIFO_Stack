@@ -12,14 +12,18 @@ public class AbstractStack implements StackInterface {
     public AbstractStack(String classID) {
         this.stack = new ArrayList<>();
         this.classID = classID;
+        System.out.println("This. ID = "+this.classID);
     }
 
     @Override
     public void addToStack(Priority p, Object object) {
         if (object.getClass().getName().equals(this.classID))
             this.stack.add(new Stack(p, object));
-        else
+        else {
             System.out.println("Cannot add object into stack !");
+            System.out.println("Object is :"+object.getClass().getName());
+            System.out.println("TESTING !");
+        }
 
     }
 
@@ -32,4 +36,16 @@ public class AbstractStack implements StackInterface {
     public Stack popFromStack() {
         return null;
     }
+
+    @Override
+    public int returnSizeStack() {
+        return stack.size();
+    }
+
+    @Override
+    public void showElements() {
+        for (Stack q : stack)
+            System.out.println(q.object + "|"+q.priority);
+    }
+
 }

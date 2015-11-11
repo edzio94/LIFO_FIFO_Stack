@@ -6,9 +6,8 @@ import java.util.Queue;
  */
 public class Stack {
     Priority priority;
-    StackType stackType;
     Object object;
-    Queue q;
+
 
     public Stack(Priority priority, Object object)
     {

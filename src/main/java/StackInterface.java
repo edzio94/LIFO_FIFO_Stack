@@ -3,9 +3,11 @@
  */
 public interface StackInterface {
 
-    public void addToStack(Priority p, Object object);
-    public Stack removeFromStack(int index);
-    public Stack popFromStack();
+    void addToStack(Priority p, Object object);
+    Stack removeFromStack(int index);
+    Stack popFromStack();
+    int returnSizeStack();
+    void showElements();
 
 
 
